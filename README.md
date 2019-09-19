@@ -19,7 +19,7 @@ The algorithm uses a top-down recursion, where at each step it chooses a "pivot"
 
 <<<add images>>>
 
-With randomly permuted arrays, any index within the current focus of subarray works as well as any other.  There are also techniques for estimating good pivots for non-randomly permuted arrays which are quite important in that case, but we should regard such techniques as a distraction for this lab.
+With randomly permuted arrays, any index chosen randomly from the current focus of subarray works as well (on expectation) as any other.  There are also techniques for estimating good pivots by examining multiple indexes, but we should regard such techniques as a distraction for this lab.
 
 -----
 
@@ -35,4 +35,4 @@ Hopefully there will be a mix of `for` and `task` implementations in the class. 
 
 -----
 
-Looking for more challenges?  Pick another efficient sorting algorithm such as mergesort or heapsort.  Naive implementations of these are out-of-place in memory.  Mergesort is at least top-down recursive.  Heapsort may be quite a bit harder to efficiently parallize!
+Looking for more challenges?  Pick another efficient sorting algorithm such as mergesort or heapsort.  The most obvious implementations of mergesort is out-of-place in memory, but because mergesort is at least top-down recursive it should otherwise be no more complicated to parallelize than quicksort.  Heapsort you may find to be quite a bit harder!
