@@ -1,7 +1,7 @@
 # HPSC Lab 4
 2019-09-20
 
-Click to [accept this assignment](LINK ME).
+Click to [make your own repo](https://classroom.github.com/a/_NocJfYi).
 
 The goals for this lab are:
 * Add thread parallelism to a quicksort implementation.
@@ -17,7 +17,7 @@ The repository contains an implementation of [quicksort](https://en.wikipedia.or
 
 The algorithm uses a top-down recursion, where at each step it chooses a "pivot" value from the array and then rearranges array elements according to whether they should be placed before or after that pivot.  Each of the two sets (*before* and *after*) can then be viewed as a new unordered arrays, and are ready for the next recursion.  An example of one recursion with images:
 
-<<<add images>>>
+![demoquicksort.png](demoquicksort.png)
 
 With randomly permuted arrays, any index chosen randomly from the current focus of subarray works as well (on expectation) as any other.  There are also techniques for estimating good pivots by examining multiple indexes, but we should regard such techniques as a distraction for this lab.
 
